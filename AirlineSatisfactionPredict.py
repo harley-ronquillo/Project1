@@ -13,7 +13,7 @@ target = 'satisfaction'
 features = data.drop(columns=[target]).select_dtypes(include=['number']).columns.tolist()
 
 # Declaring the sample size
-data_sample = data.sample(n=100, random_state=42)
+data_sample = data.sample(n=10000, random_state=42)
 
 # Splitting the dataset into training and testing sets
 # X is for the attributes to predict the Y which is the target
